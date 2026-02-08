@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>{{TITLE_HE}} | SmartInfo Israel</title>
+  <meta name="description" content="{{DESCRIPTION_HE}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="{{STYLES_CSS_HREF}}">
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+  data-cf-beacon='{"token": "7a7fe009e5124495a79c4d728f3a6eb1"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>{{H1_HE}}</h1>
+    <nav>
+      <a href="/">דף הבית</a>
+      <a href="/products/">סקירות מוצרים</a>
+      <a href="/guides/">מדריכי קנייה</a>
+      <a href="/deals/">דילים</a>
+      <a href="/about/">אודות ושקיפות</a>
+      <a href="/legal/">הצהרה משפטית</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="container" aria-label="breadcrumbs">
+  <p>
+    <a href="/">דף הבית</a> &gt; <a href="/products/">סקירות מוצרים</a> &gt; <span>{{H1_HE}}</span>
+  </p>
+</nav>
+
+<main class="container">
+  <section>
+    <p class="notice">{{NOTICE_HE}}</p>
+  </section>
+
+  <section>
+    <h2>סקירה קצרה</h2>
+    <p>{{INTRO_HE}}</p>
+  </section>
+
+  <section>
+    <h2>נקודות עיקריות</h2>
+    <ul>
+{{BULLETS_HTML}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>המשך קריאה</h2>
+    <ul>
+{{NEXT_STEPS_HTML}}
+    </ul>
+  </section>
+
+  {{AFFILIATE_CTA_HTML}}
+
+</main>
+
+<footer>
+  <div class="container">
+    <nav aria-label="footer-category-links">
+      <a href="/finance/">פיננסים</a>
+      <a href="/guides/">מדריכי קנייה</a>
+      <a href="/products/">סקירות מוצרים</a>
+      <a href="/deals/">דילים</a>
+      <a href="/legal/">הצהרה משפטית</a>
+    </nav>
+    <p>© <span id="year"></span> SmartInfo Israel</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
